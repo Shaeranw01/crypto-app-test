@@ -40,6 +40,7 @@ export default function RootLayout({
         <Link href="/dashboard/analytics">Analytics page</Link>
         <Link href="/dashboard/settings/passwords">Password</Link>
         <Link href="/dashboard/settings/profile">Profile</Link>
+        <h1>all links added now</h1>
         </div>
         <Navbar/>
         

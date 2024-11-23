@@ -3,7 +3,9 @@ export default function RootLayout({
   }: Readonly<{
     children: React.ReactNode;
   }>) {
-    return (   
+    //eslint-disable-next-line
+    console.log(" disbling eslint for this console");
+    return ( 
         <div>
             <div style={{height:"50px", background:"pink"}}></div>
             {children}

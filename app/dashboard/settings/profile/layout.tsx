@@ -3,14 +3,10 @@ export default function RootLayout({
   }: Readonly<{
     children: React.ReactNode;
   }>) {
-    return (
-   
+    return (   
         <div>
             <div style={{height:"50px", background:"pink"}}></div>
             {children}
         </div>
-      
-    
     );
   }
-  

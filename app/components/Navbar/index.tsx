@@ -1,13 +1,16 @@
 "use client";
+import { FormEvent } from "react";
+import { ChangeEvent } from "react";
 import Link from "next/link";
 import { useState } from "react";
 export default function Navbar() {
   const [cities, setCities]=useState(["London", "Paris"]);
   const [value, setValue]= useState("");
-  const handleChange=(e)=>{
-    setValue(e.target.value);
+  const handleChange=(e:ChangeEvent)=>{
+    const inputTarget = e.target as HTMLInputElement;
+    setValue(inputTarget.value);
   };
-  const handleSubmit=(e)=>{
+  const handleSubmit=(e:FormEvent)=>{
     e.preventDefault();
     setCities([...cities, value]);
     setValue("");
